@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="All Test Suite">
+    <test name="Test1">
+        <classes>
+            <class name="testForMakeUp.ValidCredentials"></class>
+            <class name="testForMakeUp.InvalidLogin"></class>
+            <class name="testForMakeUp.InvalidPassword"></class>
+            <class name="testForMakeUp.Logout"></class>
+            <class name="testForMakeUp.PasswordRestoration"></class>
+            <class name="testForMakeUp.Search"></class>
+            <class name="testForMakeUp.Basket"></class>
+            <class name="testForMakeUp.WishListNotLogin"></class>
+            <class name="testForMakeUp.WishListLogin"></class>
+            <class name="testForMakeUp.FacebookRedirect"></class>
+
+
+        </classes>
+    </test>
+</suite>
