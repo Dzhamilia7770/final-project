@@ -1,7 +1,7 @@
 package testForMakeUp;
 
 import org.testng.annotations.Test;
-import practice.Methods;
+import helper.Methods;
 
 import static testForMakeUp.Xpath.*;
 
@@ -15,6 +15,7 @@ public class WishListLogin extends Methods {
         SendText(FieldForParole, "c6t8kv_tyneLNnU");
         Click(ButtonEnter);
         WaitSec();
+        HandleUnneededModal();
         SendText(FieldSearch, "шампунь");
         Click(FirstResultText);
         WaitSec();

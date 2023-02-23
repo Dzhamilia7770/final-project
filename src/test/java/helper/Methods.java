@@ -12,6 +12,8 @@ import org.testng.annotations.BeforeClass;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
+import static testForMakeUp.Xpath.*;
+
 
 public class Methods {
     protected static WebDriver driver;
@@ -91,10 +93,18 @@ public class Methods {
 
     }
 
+    public static void HandleUnneededModal() {
+        List<WebElement> elements = driver.findElements(By.xpath(CloseModalButton));
+        if (elements.size() == 0) {
+            return;
+        }
+        elements.get(0).click();
+    }
+
     public static void AssertForTextContains(String xpath, String expectedText) {
         WebElement element = driver.findElement(By.xpath(xpath)); // html element
 
-        String elementText = element.getText();    // Телемарафон "Єдині новини" онлайн | 1+1 онлайн | ТСН онлайн | Новини України
+        String elementText = element.getText();
         Boolean isContains = elementText.contains(expectedText);
         System.out.println(elementText + " " + expectedText + " " + isContains);
         Assert.assertTrue(isContains);

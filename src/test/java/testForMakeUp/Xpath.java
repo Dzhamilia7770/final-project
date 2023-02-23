@@ -26,6 +26,8 @@ public class Xpath {
     public static final String ButtonEnter = "/html/body/form[1]/div/div[2]/div[3]/button";
     public static final String ButtonLogout = "/html/body/div[1]/div[1]/div/div/div/ul/li[5]/a";
     public static final String Cabinet = "/html/body/div[1]/div[1]/header/div[1]/div/div[3]/a";
+
+    public static final String CloseModalButton = "/html/body/div[4]/div/div[1]";
     public static final String TextForCabinet = "/html/body/div[1]/div[1]/div/div/h1";
     public static final String TextForEnterCabinet = "/html/body/div[1]/div[1]/header/div[1]/div/div[3]/div";
 

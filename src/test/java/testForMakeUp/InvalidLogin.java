@@ -1,7 +1,7 @@
 package testForMakeUp;
 
 import org.testng.annotations.Test;
-import practice.Methods;
+import helper.Methods;
 
 import static testForMakeUp.Xpath.*;
 

@@ -1,7 +1,7 @@
 package testForMakeUp;
 
 import org.testng.annotations.Test;
-import practice.Methods;
+import helper.Methods;
 
 import static testForMakeUp.Xpath.*;
 
@@ -16,6 +16,8 @@ public class Logout extends Methods {
         WaitSec();
         SendText(FieldForParole, "c6t8kv_tyneLNnU");
         Click(ButtonEnter);
+        WaitSec();
+        HandleUnneededModal();
         WaitSomeSeconds(7000);
         AssertForText(Cabinet, "Кабінет");
         Click(Cabinet);
